@@ -37,7 +37,7 @@ Link to Jupyter Notebook:
 
 ## Model Building & Prediction
 
-A basic machine learning model was created to predict cognitive scores based on the cleaned data. While the initial model provides decent results, it can be improved further using more advanced algorithms and tuning.
+A basic Linear Regression model was created to predict cognitive scores based on the cleaned data. While the initial model provides decent results, more advanced algorithms can be explored and be compared with each other to find the best model to suit the usecase.
 
 ## Conclusion: 
 The model shows potential in identifying how various factors influence cognitive performance. By comparing more advanced models and fine-tuning the current approach, this work can be enhanced and applied in real-world scenarios, such as mental wellness tracking and personalized lifestyle recommendations.
