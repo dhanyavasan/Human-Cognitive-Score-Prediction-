@@ -39,5 +39,5 @@ Please find the EDA in this [link](https://github.com/dhanyavasan/Human-Cognitiv
 
 A basic Linear Regression model was created to predict cognitive scores based on the cleaned data. While the initial model provides decent results, more advanced algorithms can be explored and be compared with each other to find the best model to suit the usecase.
 
-## Conclusion: 
+## Conclusion
 The model shows potential in identifying how various factors influence cognitive performance. By comparing more advanced models and fine-tuning the current approach, this work can be enhanced and applied in real-world scenarios, such as mental wellness tracking and personalized lifestyle recommendations.
