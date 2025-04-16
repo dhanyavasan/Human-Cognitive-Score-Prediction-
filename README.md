@@ -6,7 +6,7 @@ The objective of this study is to examine the extent to which behavioral, lifest
 ## Dataset
 This dataset is sourced from [Kaggle](https://www.kaggle.com/datasets/samxsam/human-cognitive-performance-analysis/data). The dataset containing 80,000 samples is explored with the objective of predicting human cognitive scores based on a variety of lifestyle, demographic, and behavioral features. The dataset includes attributes such as age, sleep duration, stress level, diet type, screen time, exercise frequency, caffeine intake, memory test score and more—each potentially influencing cognitive performance. 
 
-Please find the EDA in this [link](https://github.com/dhanyavasan/Human-Cognitive-Score-Prediction-/blob/main/Capstone_phase_I.ipynb) to Jupyter Notebook: 
+Please find the EDA in this [link](https://github.com/dhanyavasan/Human-Cognitive-Score-Prediction-/blob/main/Capstone_phase_I.ipynb) to Jupyter Notebook.
 
 
 ##  Exploratory Data Analysis (EDA) Insights
