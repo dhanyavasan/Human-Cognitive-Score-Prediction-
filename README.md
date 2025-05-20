@@ -10,7 +10,7 @@ This study aims to investigate which behavioral, lifestyle, and demographic fact
 ## Dataset
 This dataset is sourced from [Kaggle](https://www.kaggle.com/datasets/samxsam/human-cognitive-performance-analysis/data). The dataset containing 80,000 samples is explored with the objective of predicting human cognitive scores based on a variety of lifestyle, demographic, and behavioral features. The dataset includes attributes such as age, sleep duration, stress level, diet type, screen time, exercise frequency, caffeine intake, memory test score and more—each potentially influencing cognitive performance. 
 
-Please find the analysis & the model in this [......] to Jupyter Notebook.
+Please find the analysis & the model in this [link](https://github.com/dhanyavasan/Human-Cognitive-Score-Prediction-/blob/main/HumanCognitiveScore_Prediction.ipynb) to Jupyter Notebook.
 
 ## Overview of Predictive Modeling Process
 Given that the dataset is structured in tabular form and the objective is to predict a continuous cognitive score, a supervised learning approach was employed using both linear and non-linear regression algorithms, including Linear Regression, Lasso Regression, Random Forest, and XGBoost. The models were evaluated based on residual plots, learning curves with increasing training size, and Root Mean Squared Error (RMSE) to identify the best performer.
