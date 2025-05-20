@@ -3,7 +3,9 @@
 **Dhanya Srinivasan**
 
 ## Introduction
-In today’s fast-paced, distraction-heavy world, declining attention spans and rising cognitive health issues like ADHD have become increasingly common. Lifestyle, behavioral, and demographic factors play a critical role in shaping cognitive performance, yet these influences are often overlooked. This study aims to investigate how such factors contribute to variations in cognitive ability and to build a predictive model that estimates cognitive scores. The resulting tool can support cognitive health monitoring for individuals, assist clinicians in assessment, and serve as a foundation for further research in educational and wellness domains.
+In today’s fast-paced, distraction-heavy world, declining attention spans and rising cognitive health issues like ADHD have become increasingly common. These directly impacts productivity, well-being, mental health and quality of life of people. The behavioral, and demographic factors play a critical role in shaping cognitive performance, yet these influences are often overlooked. 
+
+This study aims to investigate which behavioral, lifestyle, and demographic factors contribute to variations in cognitive ability and to build a predictive model that estimates cognitive scores. The resulting tool not only enables individuals to assess their cognitive health but also empowers them to be proactive and make lifestyle adjustments to improve mental well-being. Additionally, it can assist clinicians in cognitive assessment and serve as a foundation for further research in healthcare, education, and wellness domains.
 
 ## Dataset
 This dataset is sourced from [Kaggle](https://www.kaggle.com/datasets/samxsam/human-cognitive-performance-analysis/data). The dataset containing 80,000 samples is explored with the objective of predicting human cognitive scores based on a variety of lifestyle, demographic, and behavioral features. The dataset includes attributes such as age, sleep duration, stress level, diet type, screen time, exercise frequency, caffeine intake, memory test score and more—each potentially influencing cognitive performance. 
