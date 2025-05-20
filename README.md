@@ -1,13 +1,17 @@
 # Human-Cognitive-Score-Prediction
 
-## Overview
-The objective of this study is to examine the extent to which behavioral, lifestyle, and demographic factors contribute to variations in human cognitive performance. By leveraging a large-scale dataset, this analysis aims to uncover meaningful patterns and relationships within the data and to construct a data-driven model capable of estimating cognitive scores.
+**Dhanya Srinivasan**
+
+## Introduction
+In today’s fast-paced, distraction-heavy world, declining attention spans and rising cognitive health issues like ADHD have become increasingly common. Lifestyle, behavioral, and demographic factors play a critical role in shaping cognitive performance, yet these influences are often overlooked. This study aims to investigate how such factors contribute to variations in cognitive ability and to build a predictive model that estimates cognitive scores. The resulting tool can support cognitive health monitoring for individuals, assist clinicians in assessment, and serve as a foundation for further research in educational and wellness domains.
 
 ## Dataset
 This dataset is sourced from [Kaggle](https://www.kaggle.com/datasets/samxsam/human-cognitive-performance-analysis/data). The dataset containing 80,000 samples is explored with the objective of predicting human cognitive scores based on a variety of lifestyle, demographic, and behavioral features. The dataset includes attributes such as age, sleep duration, stress level, diet type, screen time, exercise frequency, caffeine intake, memory test score and more—each potentially influencing cognitive performance. 
 
-Please find the EDA in this [link](https://github.com/dhanyavasan/Human-Cognitive-Score-Prediction-/blob/main/Capstone_phase_I.ipynb) to Jupyter Notebook.
+Please find the analysis & the model in this [......] to Jupyter Notebook.
 
+## Overview of Predictive Modeling Process
+Given that the dataset is structured in tabular form and the objective is to predict a continuous cognitive score, a supervised learning approach was employed using both linear and non-linear regression algorithms, including Linear Regression, Lasso Regression, Random Forest, and XGBoost. The models were evaluated based on residual plots, learning curves with increasing training size, and Root Mean Squared Error (RMSE) to identify the best performer.
 
 ##  Exploratory Data Analysis (EDA) Insights
 1. **Sleep Duration**:  
@@ -28,16 +32,49 @@ Please find the EDA in this [link](https://github.com/dhanyavasan/Human-Cognitiv
 
 ## Data Preprocessing
 
-1. Removed: User_ID and AI_Prediction_Score (irrelevant for cognitive score prediction).
-2. Normalized - Applied to numerical features (Age, Caffeine_Intake, Reaction_Time, Memory_Test_Score) as these features showed uniform distribution.
-3. Ordinal Encoding - Applied to Stress_Level and Exercise_Frequency as they have an inherent order.
-4. Nominal Encoding - Applied to Gender and Diet_Type (non-ordinal categories).
-5. Joint Encoding - Applied to Sleep_Duration and Daily_Screen_Time (related features in hours).
+1. **Feature Selection:**
+Removed: Dropped irrelevant features, namely User_ID and AI_Prediction_Score, as they do not contribute to predicting cognitive scores.
+
+2. **Normalization:**
+Applied to Numerical Features: Features like Age, Caffeine_Intake, Reaction_Time, Memory_Test_Score, Sleep_Duration, and Daily_Screen_Time were normalized since these features exhibited a uniform distribution. This ensures that all numerical data is on a comparable scale.
+
+3. **Data Splitting:**
+Train-Test Split: The dataset was divided into training (80%) and test (20%) sets to train the model and evaluate its performance on unseen data.
+
+4. **Encoding:**
+      - **Ordinal Encoding:** Applied to Stress_Level and Exercise_Frequency, as these features have a natural order (e.g., low, medium, high).
+      - **Nominal Encoding:** Applied to Gender and Diet_Type, which are non-ordinal categorical variables. One-hot encoding was used to represent these features, creating binary columns for each category.
 
 
-## Model Building & Prediction
 
-A basic Linear Regression model was created to predict cognitive scores based on the cleaned data. While the initial model provides decent results, more advanced algorithms can be explored and be compared with each other to find the best model to suit the usecase.
+
+## Modeling
+To predict cognitive scores, both linear and non-linear regression models were implemented and compared. Each model underwent appropriate hyperparameter tuning to optimize its performance.
+
+- **Linear Regression:** A simple linear model used as a baseline to predict the cognitive score and capture relationships between features and the target.
+
+- **Lasso Regression:** A regularized linear model that helps reduce overfitting by applying L1 regularization, improving model generalization.
+
+- **Random Forest Regressor (Bagging):** A non-linear ensemble model that uses bagging, training multiple decision trees on bootstrapped samples to capture complex relationships.
+
+- **XGBoost Regressor (Boosting):** A non-linear ensemble model that uses boosting to sequentially correct errors from previous trees, effectively capturing intricate, non-linear patterns in the data.
+
+## Model Evaluation
+
+
 
 ## Conclusion
-The model shows potential in identifying how various factors influence cognitive performance. By comparing more advanced models and fine-tuning the current approach, this work can be enhanced and applied in real-world scenarios, such as mental wellness tracking and personalized lifestyle recommendations.
+The predictive model identified reaction time and memory performance as the most significant factors influencing cognitive scores. This highlights the importance of engaging in activities that strengthen mental function, such as cognitive training and memory-enhancing exercises. Furthermore, adopting healthier lifestyle habits—including regular physical activity, effective stress management, adequate sleep, limited screen time, and moderate caffeine consumption—can contribute positively to overall cognitive well-being.
+
+## Next Steps & Recommendations
+- Expand the dataset with more diverse samples to improve model generalization.
+- Incorporate additional features like genetic features, cognitive history for deeper insights.
+- Explore advanced modeling techniques and hyperparameter tuning to enhance prediction accuracy.
+- Validate the model periodically with real-world data to ensure practical relevance and reliability.
+
+
+
+
+
+
+
