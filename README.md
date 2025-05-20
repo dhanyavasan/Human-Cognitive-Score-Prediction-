@@ -62,8 +62,14 @@ To predict cognitive scores, both linear and non-linear regression models were i
 - **XGBoost Regressor (Boosting):** A non-linear ensemble model that uses boosting to sequentially correct errors from previous trees, effectively capturing intricate, non-linear patterns in the data.
 
 ## Model Evaluation
+The table below presents a comparison of the Mean Squared Error (MSE), Root Mean Squared Error (RMSE), and R² scores for both the training and test sets across all evaluated models.
 
+<img width="362" alt="Screenshot 2025-05-19 at 10 28 32 PM" src="https://github.com/user-attachments/assets/fc15cab2-dc68-4833-b346-508ab479c859" />
 
+   **Evaluation Metric:** To assess the performance of the regression models, **Root Mean Square Error (RMSE)** was used as the primary evaluation metric. RMSE is chosen because it offers an interpretable measure of predictive accuracy by penalizing larger errors more heavily, making it sensitive to overall model performance across the full range of the target variable.
+- Among all models, **XGBoost Regressor demonstrated the best performance**, achieving the lowest RMSE of 1.130. This suggests that it effectively captures complex, non-linear relationships in the data, resulting in higher predictive accuracy.
+- Linear Regression and Lasso Regression both yielded an RMSE of 1.940, indicating similar performance. Due to their linear nature, these models may not fully capture the underlying non-linear patterns present in the dataset.
+- In contrast, the Random Forest Regressor produced the highest RMSE of 2.555, suggesting it was less effective in modeling the data compared to the other approaches in this context.
 
 ## Conclusion
 The predictive model identified reaction time and memory performance as the most significant factors influencing cognitive scores. This highlights the importance of engaging in activities that strengthen mental function, such as cognitive training and memory-enhancing exercises. Furthermore, adopting healthier lifestyle habits—including regular physical activity, effective stress management, adequate sleep, limited screen time, and moderate caffeine consumption—can contribute positively to overall cognitive well-being.
